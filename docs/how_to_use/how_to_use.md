@@ -1,3 +1,8 @@
+---
+title: How to Use
+permalink: /how_to_use/
+---
+
 # How to Use
 
 ## Available Cloud Platforms

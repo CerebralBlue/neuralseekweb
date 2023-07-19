@@ -1,3 +1,8 @@
+---
+title: NeuralSeek Documentation
+permalink: /overview/
+---
+
 # Overview
 
 ![NeuralSeek overview](images/ns_overview.png)

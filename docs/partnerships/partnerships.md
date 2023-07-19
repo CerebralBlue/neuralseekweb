@@ -1,3 +1,8 @@
+---
+title: Partnerships
+permalink: /partnerships/
+---
+
 # Partnerships
 
 ## **IBM**

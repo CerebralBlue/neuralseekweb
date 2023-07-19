@@ -1,3 +1,8 @@
+---
+title: Data Security and Privacy
+permalink: /data_security_and_privacy/
+---
+
 # Data Security & Privacy
 
 NeuralSeek is both a UI and a (REST) API. All data that flows to or thru us is encrypted SSL/TLS. All data stored is also encrypted.
