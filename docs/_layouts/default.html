@@ -11,7 +11,9 @@
     <div class="container">
     <nav>
       {% assign pages = site.pages | where: "parent", "root" %}
+      {% comment %}
       <p>root pages found: {{ pages.size }}</p>
+      {% endcomment %}
       {% assign QUEUE = "" | split: "," %}
       {% assign QUEUE = QUEUE | push: pages %}
       <ul>
@@ -37,7 +39,10 @@
         {% if current.size > 0 %}
           {% assign current = current | slice: 1, current.size %}
         {% endif %}
+        
+        {% comment %}
         <p>page: {{ pagename }} children: {{ child.size }} QUEUE size: {{ QUEUE.size }}</p>
+        {% endcomment %}
 
         {% comment %}
         *******************************************
