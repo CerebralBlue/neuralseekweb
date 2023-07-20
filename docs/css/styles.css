@@ -20,6 +20,15 @@ section {
     margin-left: 50px;
 }
 
+div.logo-50 {
+    text-align: center;
+    padding: 20px;
+}
+
+div.logo-50 img {
+    width: 50%;
+}
+
 .top-menu {
     display: block;
     width: 100%;

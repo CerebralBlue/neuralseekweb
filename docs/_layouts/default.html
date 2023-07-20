@@ -10,6 +10,9 @@
     <header></header>
     <div class="container">
     <nav>
+      <div class="logo-50">
+        <a href="{{ site.url }}{{ site.baseurl }}/"><image src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg"/></a>
+      </div>
       {% assign pages = site.pages | where: "parent", "root" %}
       {% comment %}
       <p>root pages found: {{ pages.size }}</p>
