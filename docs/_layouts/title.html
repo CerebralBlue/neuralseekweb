@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
+  </head>
+  <body class="markdown-body">
+    <header></header>
+    <div class="container">
+    <section class="title">
+      {{ content }}
+    </section>
+    <nav class="top-menu">
+      {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
+      <ul>
+      {% for page in pages %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}
+      </ul>
+    </nav>
+    </div>
+  </body>
+</html>
