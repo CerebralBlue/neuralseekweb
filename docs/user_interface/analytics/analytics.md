@@ -1,3 +1,10 @@
+---
+title: Analytics
+permalink: /user_interface/analytics/
+parent: user_interface
+order: 7
+---
+
 # Analytics
 
 ![analytics](images/analytics.png)

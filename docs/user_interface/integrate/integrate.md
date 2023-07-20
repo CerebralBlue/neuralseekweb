@@ -1,3 +1,10 @@
+---
+title: Integrate
+permalink: /user_interface/integrate/
+parent: user_interface
+order: 3
+---
+
 # Integrate
 
 ![integrate.png](images/integrate.png)

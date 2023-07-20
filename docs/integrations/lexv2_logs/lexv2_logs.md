@@ -1,3 +1,10 @@
+---
+title: LexV2 Logs
+permalink: /integrations/lexv2_logs/
+parent: integrations
+order:
+---
+
 # LexV2 Logs
 
 Use the AWS Lambda archive to send user input that routes to the Lex FallbackIntent to NeuralSeek.

@@ -1,3 +1,10 @@
+---
+title: Supported LLMs
+permalink: supported_llms
+parent: integrations
+order:
+---
+
 # Supported LLMs
 
 NeuralSeek supports the following Large Language Models (LLM) as of July of 2023:

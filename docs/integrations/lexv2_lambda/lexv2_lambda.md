@@ -1,3 +1,10 @@
+---
+title: LexV2 Lambda
+permalink: /integrations/lexv2_lambda/
+parent: integrations
+order:
+---
+
 # LexV2 Lambda
 
 Use the pre-configured AWS Lambda Archive to setup and send user input that are routed through the Lex FallbackIntent to NeuralSeek.

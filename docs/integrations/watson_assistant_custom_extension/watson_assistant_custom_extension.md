@@ -1,3 +1,10 @@
+---
+title: Watson Assistant Custom Extension
+permalink: /integrations/watson_assistant_custom_extension/
+parent: integrations
+order:
+---
+
 # Watson Assistant Custom Extension
 
 Use the custom extension to call NeuralSeek within Watson Assistant's "Actions" framework.

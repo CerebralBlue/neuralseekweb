@@ -1,3 +1,10 @@
+---
+title: REST API
+permalink: /integrations/rest_api/
+parent: integrations
+order:
+---
+
 # REST API
 
 Virtual Agents, chatbots, and applications can send user questions and receive answers via NeuralSeek’s REST API. In the `Integrate > API`, you can access its openAPI documentation that covers its service endpoints, and also can test its executions, as well as access the message schema. For more information, please refer to [https://api.neuralseek.com/](https://api.neuralseek.com/).

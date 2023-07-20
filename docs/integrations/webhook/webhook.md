@@ -1,3 +1,9 @@
+---
+title: WebHook
+permalink: /integrations/webhook/
+parent: integrations
+---
+
 # WebHook
 
 You can integrate NeuralSeek with applications that knows how to send WebHooks to it.

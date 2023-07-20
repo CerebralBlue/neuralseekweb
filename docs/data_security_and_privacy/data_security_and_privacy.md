@@ -1,6 +1,8 @@
 ---
 title: Data Security and Privacy
 permalink: /data_security_and_privacy/
+parent: /
+order: 6
 ---
 
 # Data Security & Privacy

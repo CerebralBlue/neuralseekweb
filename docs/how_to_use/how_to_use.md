@@ -1,6 +1,8 @@
 ---
 title: How to Use
 permalink: /how_to_use/
+parent: /
+order: 2
 ---
 
 # How to Use

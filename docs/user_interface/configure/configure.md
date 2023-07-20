@@ -1,3 +1,10 @@
+---
+title: Configure
+permalink: /user_interface/configure/
+parent: user_interface
+order: 2
+---
+
 # Configure
 
 ![configure](images/configure.png)

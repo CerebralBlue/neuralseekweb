@@ -1,3 +1,10 @@
+---
+title: Supported KnowledgeBases
+permalink: /integrations/supported_knowledgebases/
+parent: integrations
+order:
+---
+
 # Supported KnowledgeBases
 
 NeuralSeek supports the following types of Corporate KnowledgeBases as of July 2023:

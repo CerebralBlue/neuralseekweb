@@ -1,3 +1,10 @@
+---
+title: Curate
+permalink: /user_interface/curate/
+parent: user_interface
+order: 6
+---
+
 # Curate
 
 ![curate](images/curate.png)

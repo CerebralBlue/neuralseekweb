@@ -1,3 +1,10 @@
+---
+title: Extract
+permalink: /user_interface/extract/
+parent: user_interface
+order: 4
+---
+
 # Extract
 
 ![extract](images/extract.png)

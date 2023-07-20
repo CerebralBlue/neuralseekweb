@@ -1,6 +1,8 @@
 ---
 title: Partnerships
 permalink: /partnerships/
+parent: /
+order: 7
 ---
 
 # Partnerships

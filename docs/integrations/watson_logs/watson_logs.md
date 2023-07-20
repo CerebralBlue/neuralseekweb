@@ -1,3 +1,10 @@
+---
+title: Watson Logs
+permalink: /integrations/watson_logs/
+parent: integrations
+order: 
+---
+
 # Watson Logs
 
 NeuralSeek will monitor the usage of NeuralSeek-curated intents within both the Actions and Dialogs frameworks of Watson Assistant, and will inform you of any curated intents that may need to be updated, based on changes to relevant documents in the connected KnowledgeBase.

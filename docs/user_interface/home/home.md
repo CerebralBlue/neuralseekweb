@@ -1,3 +1,10 @@
+---
+title: Home
+permalink: /user_interface/home/
+parent: user_interface
+order: 1
+---
+
 # Home
 
 ![home](images/home.png)

@@ -1,6 +1,8 @@
 ---
 title: Support and Help
 permalink: /support_and_help/
+parent: /
+order: 8
 ---
 
 # Support and Help
