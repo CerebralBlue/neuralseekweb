@@ -4,17 +4,88 @@
     <meta charset="utf-8"/>
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="/css/github-markdown.css"/>
   </head>
-  <body>
-    <nav>
-      <a href="{{ site.url }}{{ site.baseurl }}/">Home</a>
-      <a href="{{ site.url }}{{ site.baseurl }}/overview">Documentation</a>
+  <body class="markdown-body">
+    <header></header>
+    <div class="container">
+    <nav>      
+      {% assign pages = site.pages | where: "parent", nil %}
+      {% assign QUEUE = "" | split: "," %}
+      {% assign QUEUE = QUEUE | push: pages %}
+      <ul>
+      {% for counter in ( 0.. site.pages.size ) %}
+        {% if QUEUE.size == 0 %}
+          {% break %}
+        {% endif %}
+
+        {% assign current = QUEUE | last %}
+        {% if current.size == 0 %}
+          {% break %}
+        {% endif %}
+
+        {% assign pagename = current[0].url %}
+
+        {% if pagename != "/" %}
+          {% assign pagename = current[0].url | split: "/" | last | split: "." | first %}
+        {% endif %}
+
+          <li><a href="{{ site.url }}{{ site.baseurl }}{{current[0].url}}">{{ current[0].title }}</a></li>
+
+        {% assign child = site.pages | where: "parent", pagename | sort: "order" %}
+        {% if current.size > 0 %}
+          {% assign current = current | slice: 1, current.size %}
+        {% endif %}
+
+        {% comment %}
+        *******************************************
+        * the normal slice as such:
+        *
+        * {% assign QUEUE = QUEUE | slice: 0, -1 %}
+        * 
+        * just won't work due to some unknown reason
+        * (could be a bug). just decided to do it a 
+        * hard way
+        ********************************************
+        {% endcomment %}
+        {% assign tmp_Q = "" | split: "," %}
+        {% for item in QUEUE %}
+          {% unless forloop.last %}
+            {% assign tmp_Q = tmp_Q | push: item %}
+          {% endunless %}
+        {% endfor %}
+
+        {% assign QUEUE = tmp_Q %}
+        {% assign QUEUE = QUEUE | push: current %}
+
+        {% if child.size > 0 %}
+          {% assign QUEUE = QUEUE | push: child %}
+          <ul>
+        {% else %}
+          {% if current.size == 0 and child.size == 0 %}
+            
+            {% comment %}
+            ********************************************
+            * pop the last element out of QUEUE        *
+            ********************************************
+            {% endcomment %}
+            {% assign tmp_Q = "" | split: "," %}
+            {% for item in QUEUE %}
+              {% unless forloop.last %}
+                {% assign tmp_Q = tmp_Q | push: item %}
+              {% endunless %}
+            {% endfor %}
+            {% assign QUEUE = tmp_Q %}
+            </ul>
+
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      </ul>
     </nav>
     <section>
       {{ content }}
     </section>
-    <footer>
-      &copy 2023
-    </footer>
+    </div>
   </body>
 </html>
