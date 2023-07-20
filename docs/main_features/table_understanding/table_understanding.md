@@ -2,7 +2,7 @@
 title: Table Understanding
 permalink: /main_features/table_understanding/
 parent: main_features
-order: 
+order: 12
 ---
 
 # Table Understanding
