@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>{{ page.title }}</title>
+    <link rel="icon" type="image/svg" href="{{ site.url }}{{ site.baseurl }}/images/ns-white.svg">
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
   </head>
@@ -15,8 +16,8 @@
     <nav class="top-menu">
       {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
       <ul>
-      {% for page in pages %}
-      <li><a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
+      {% for apage in pages %}
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
       {% endfor %}
       </ul>
     </nav>

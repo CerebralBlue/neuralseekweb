@@ -12,7 +12,21 @@
     <div class="container">
     {% include side_menu.html %}
     <section>
+      <div>
       {{ content }}
+      </div>
+        <div class="hr_menu">
+            {% assign pagename = page.url | split: "/" | last | split: "." | first %}
+            {% if pagename == nil %}
+                {% assign pagename = "/" %}
+            {% endif %}
+            {% assign pages = site.pages | where: "parent", pagename | sort: "order" %}
+            <ul>
+            {% for apage in pages %}
+                <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
     </section>
     </div>
   </body>
