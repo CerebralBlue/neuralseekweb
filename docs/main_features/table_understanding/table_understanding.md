@@ -1,6 +1,6 @@
 ---
 title: Table Understanding
-permalink: /main_features/multi_language_support/
+permalink: /main_features/table_understanding/
 parent: main_features
 order: 
 ---
