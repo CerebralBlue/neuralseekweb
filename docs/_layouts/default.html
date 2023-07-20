@@ -9,7 +9,7 @@
   <body class="markdown-body">
     <header></header>
     <div class="container">
-    <nav>      
+    <nav>
       {% assign pages = site.pages | where: "parent", nil %}
       {% assign QUEUE = "" | split: "," %}
       {% assign QUEUE = QUEUE | push: pages %}
@@ -36,6 +36,7 @@
         {% if current.size > 0 %}
           {% assign current = current | slice: 1, current.size %}
         {% endif %}
+        <p>page: {{ pagename }} children: {{ child.size }} QUEUE size: {{ QUEUE.size }}</p>
 
         {% comment %}
         *******************************************
