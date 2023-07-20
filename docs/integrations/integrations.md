@@ -1,7 +1,7 @@
 ---
 title: Integrations
 parent: /
-premalink: /integrations/
+permalink: /integrations/
 order: 5
 ---
 
