@@ -10,7 +10,7 @@
     <header></header>
     <div class="container">
     <nav>
-      {% assign pages = site.pages | where: "parent", nil %}
+      {% assign pages = site.pages | where: "parent", "root" %}
       <p>root pages found: {{ pages.size }}</p>
       {% assign QUEUE = "" | split: "," %}
       {% assign QUEUE = QUEUE | push: pages %}
