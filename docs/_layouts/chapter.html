@@ -1,33 +1,71 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8"/>
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/svg" href="{{ site.url }}{{ site.baseurl }}/images/ns-white.svg">
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      @media (min-width: 768px) {
+          .sidebar {
+              min-width: 200px;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              z-index: 100;
+              padding: 0 0 0 0;
+          }
+
+          .navbar-top { 
+              display: none;
+          }
+      }
+    </style>
   </head>
   <body class="markdown-body">
-    <header></header>
-    <div class="container">
-    {% include side_menu.html %}
-    <section>
-      <div>
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none navbar-top">
+      <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">NeuralSeek Documentation</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          {% include side_menu.html %}
+      </div>
+    </nav>
+
+    <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar">
+      <div class="sidebar-sticky">
+        <div style="text-align:center;padding-top:40px;padding-bottom:20px;"><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" style="min-width:100px;height:auto" /></a></div>
+        <div>
+          {% include side_menu.html %}
+        </div>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div style="padding-left:50px; padding-right:50px">
       {{ content }}
       </div>
-        <div class="hr_menu">
-            {% assign pagename = page.url | split: "/" | last | split: "." | first %}
-            {% if pagename == nil %}
-                {% assign pagename = "/" %}
-            {% endif %}
-            {% assign pages = site.pages | where: "parent", pagename | sort: "order" %}
-            <ul>
-            {% for apage in pages %}
-                <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
-            {% endfor %}
-            </ul>
-        </div>
-    </section>
-    </div>
+      <div class="hr_menu">
+        {% assign pagename = page.url | split: "/" | last | split: "." | first %}
+        {% if pagename == nil %}
+            {% assign pagename = "/" %}
+        {% endif %}
+        {% assign pages = site.pages | where: "parent", pagename | sort: "order" %}
+        <ul>
+        {% for apage in pages %}
+            <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </main>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

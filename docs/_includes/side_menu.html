@@ -1,14 +1,10 @@
-  <nav>
-    <div class="logo-50">
-      <a href="{{ site.url }}{{ site.baseurl }}/"><image src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg"/></a>
-    </div>
     {% assign pages = site.pages | where: "parent", "root" %}
     {% comment %}
     <p>root pages found: {{ pages.size }}</p>
     {% endcomment %}
     {% assign QUEUE = "" | split: "," %}
     {% assign QUEUE = QUEUE | push: pages %}
-    <ul>
+    <ul class="nav flex-column" style="padding-inline-start: 0px;padding-left:1.2em">
     {% for counter in ( 0.. site.pages.size ) %}
       {% if QUEUE.size == 0 %}
         {% break %}
@@ -25,7 +21,9 @@
         {% assign pagename = current[0].url | split: "/" | last | split: "." | first %}
       {% endif %}
 
-        <li><a href="{{ site.url }}{{ site.baseurl }}{{current[0].url}}" {% if current[0].url == page.url %}class="selected"{% endif %}>{{ current[0].title }}</a></li>
+        <li class="nav-item" style="line-height:1.5em;">
+          <a href="{{ site.url }}{{ site.baseurl }}{{current[0].url}}"><span {% if current[0].url == page.url %} class="current_page" {% endif %}>{{ current[0].title }}</span></a>
+        </li>
 
       {% assign child = site.pages | where: "parent", pagename | sort: "order" %}
       {% if current.size > 0 %}
@@ -59,7 +57,7 @@
 
       {% if child.size > 0 %}
         {% assign QUEUE = QUEUE | push: child %}
-        <ul>
+        <ul class="nav flex-column" style="padding-inline-start:0px;padding-left:1.2em">
       {% else %}
         {% if current.size == 0 and child.size == 0 %}
           
@@ -81,4 +79,3 @@
       {% endif %}
     {% endfor %}
     </ul>
-  </nav>
