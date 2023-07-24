@@ -18,16 +18,12 @@ jobs:
       # Checks-out into publish branch
       - uses: actions/checkout@v3
         with:
-          ref: main
-
-      - uses: actions/checkout@v3
-        with:
           ref: publish
 
       # Runs a single command using the runners shell
       - name: Update publish branch
         run: |
-          git merge main -m "Merged main -> publish on $(date +%F)"
+          git merge origin/main -m "Merged main -> publish on $(date +%F)"
 
       # Runs a set of commands using the runners shell
       - name: Push the publish branch
