@@ -16,11 +16,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out into publish branch
-      - name: Update publish branch
-        run: |
-          git checkout main
-          git checkout publish
-          git merge main -m "Merged main -> publish on $(date +%F)"
+      - name: check out main
+        run: git checkout main
+
+      # Check-out publish branch
+      - name: check out publish
+        run: git checkout publish
+
+      # merge the publish with main
+      - name: merge branch
+        run: git merge main -m "Merged main -> publish on $(date +%F)"
 
       # Runs a set of commands using the runners shell
       - name: Push the publish branch
