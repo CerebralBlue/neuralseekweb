@@ -18,6 +18,10 @@ jobs:
       # Checks-out into publish branch
       - uses: actions/checkout@v3
         with:
+          ref: main
+
+      - uses: actions/checkout@v3
+        with:
           ref: publish
 
       # Runs a single command using the runners shell
