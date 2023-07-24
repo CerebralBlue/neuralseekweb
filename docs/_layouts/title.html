@@ -10,17 +10,20 @@
   <body class="markdown-body">
     <header></header>
     <div class="container">
-    <section class="title">
-      {{ content }}
-    </section>
-    <nav class="top-menu">
-      {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
-      <ul>
-      {% for apage in pages %}
-      <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
-      {% endfor %}
-      </ul>
-    </nav>
+      <section class="title content">
+        {{ content }}
+      </section>
+      <div style="display:flex; padding-left:20px">
+        <div style="width:100%;text-align:center"><a href="https://nauralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" style="width:80%;height:auto;display:block" /></a></div>
+        <nav class="top-menu">
+          {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
+          <ul>
+          {% for apage in pages %}
+          <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
+          {% endfor %}
+          </ul>
+        </nav>
+      </div>
     </div>
   </body>
 </html>

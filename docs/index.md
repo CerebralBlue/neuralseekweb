@@ -6,5 +6,3 @@ parent: root
 ---
 
 # 📖 Welcome to NeuralSeek Documentation
-
-![NeuralSeek Logo](images/NeuralSeekLogoIcon.svg)
