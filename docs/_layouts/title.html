@@ -6,15 +6,16 @@
     <link rel="icon" type="image/svg" href="{{ site.url }}{{ site.baseurl }}/images/ns-white.svg">
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body class="markdown-body">
-    <header></header>
     <div class="container">
       <section class="title content">
         {{ content }}
       </section>
-      <div style="display:flex; padding-left:20px">
-        <div style="width:100%;text-align:center"><a href="https://nauralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" style="width:80%;height:auto;display:block" /></a></div>
+      <div style="display:flex;">
+        <div style="width:100%;padding-left:40px;"><a href="https://nauralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" style="width:80%;height:auto;display:block" /></a></div>
         <nav class="top-menu">
           {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
           <ul>
@@ -25,5 +26,8 @@
         </nav>
       </div>
     </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

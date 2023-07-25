@@ -36,8 +36,8 @@ body {
 }
 
 .title {
-    width: 100%;
-    margin-left: 50px;
+  width: 100%;
+  margin-left: 50px;
 }
 
 div.logo-50 {
@@ -48,9 +48,8 @@ div.logo-50 {
 .top-menu {
     display: block;
     width: 100%;
-    padding: 20px;
-    font-size: 1em;
-    margin-top: 60px;
+    padding: 10px;
+    font-size: 1.3em;
 }
 
 a.selected {
