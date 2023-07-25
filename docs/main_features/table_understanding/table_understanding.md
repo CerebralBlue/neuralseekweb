@@ -17,7 +17,7 @@ Being able to understand data in tabular structure in documents and generating a
 - To find table extraction, open up your instance of NeuralSeek and head over to the `Configure`.
 - Select Table understanding
 
-> ⚠️ Since Table Extraction is currently opt-in only, to be able to access and use this feature you will have to contact cloud@cerebralblue.com with details of your opportunity and use case to be eligible.
+> ⚠️ Note for users of lite/trial plans - to be able to access and use this feature you will have to contact cloud@cerebralblue.com with details of your opportunity and use case to be eligible.
 
 - Once you have everything set, go over to `Watson Discovery`, and if you don’t already, `create a project and import a pdf file` that contains some tables.
 - Once you have the project copy the API information and go back to the `Configure` in NeuralSeek. Scroll down to Table Understanding, paste the project id, hit save, and proceed to the `Seek` tab.
