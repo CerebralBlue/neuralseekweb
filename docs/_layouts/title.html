@@ -14,8 +14,8 @@
       <section class="title content">
         {{ content }}
       </section>
-      <div style="display:flex;">
-        <div style="width:100%;padding-left:40px;"><a href="https://nauralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" style="width:80%;height:auto;display:block" /></a></div>
+      <div class="title">
+        <div class="logo"><a href="https://nauralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" /></a></div>
         <nav class="top-menu">
           {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
           <ul>

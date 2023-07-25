@@ -30,26 +30,48 @@
     }
   }
 
+  /* for smaller screens */
+  @media (max-width: 600px) {
+    .title {
+      flex-direction: column;
+    }
+    .logo, 
+    .top-menu {
+      flex: auto;
+    }
+  }
+
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
 .title {
-  width: 100%;
-  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-div.logo-50 {
-    text-align: center;
-    padding: 20px;
+.logo {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo img {
+  min-height: 300px;
+  width: auto;
+  display: block;
 }
 
 .top-menu {
-    display: block;
-    width: 100%;
+    flex: 1;
     padding: 10px;
     font-size: 1.3em;
+}
+
+div.logo-50 {
+  text-align: center;
+  padding: 20px;
 }
 
 a.selected {
