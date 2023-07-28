@@ -19,3 +19,7 @@ Use the custom extension to call NeuralSeek within Watson Assistant's "Actions" 
 6. Click "Next", "Finish", then "Close".
 7. On the "Actions" tab of Watson Assistant, click "Create Action". Choose Quick Start, then select the NeuralSeek Starter Kit.
 8. Open your action and connect it to the extension you created in the previous steps.
+
+## More information about Watson Assistant NeuralSeek Extension
+Please refer to the following documentation for more information regarding NeuralSeek starter-kit available on Watson Assistant Extension.
+[https://github.com/watson-developer-cloud/assistant-toolkit/tree/master/integrations/extensions/starter-kits/neuralseek](https://github.com/watson-developer-cloud/assistant-toolkit/tree/master/integrations/extensions/starter-kits/neuralseek)
