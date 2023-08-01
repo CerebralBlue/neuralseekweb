@@ -21,7 +21,7 @@ Visit [https://aws.amazon.com/marketplace/pp/prodview-d7cymwnii2xrq](https://aws
 
 ## Videos
 
-- [https://www.youtube.com/@Cerebral_Blue/featured](https://www.youtube.com/@Cerebral_Blue/featured): There are many helpful videos available to learn about NeuralSeek and its key features.
+- [https://www.youtube.com/@Cerebral_Blue/featured](https://www.youtube.com/@Cerebral_Blue/featured): There are many helpful videos available to learn about NeuralSeek and its features.
 
 ## Demos
 
