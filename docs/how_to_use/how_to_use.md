@@ -9,7 +9,7 @@ order: 2
 
 ## Available Cloud Platforms
 
-NeuralSeek is a SaaS solution, and the most popular and easiest way to use NeuralSeek is to use it either in IBM cloud or Amazon Web Services (AWS). If you have a cloud account in either IBM cloud or AWS, you can quickly provision an instance of NeuralSeek today.
+NeuralSeek is a SaaS solution. The most popular and easiest way to use NeuralSeek is to use it either in IBM cloud or Amazon Web Services (AWS). If you have a cloud account in either IBM cloud or AWS, you can quickly provision an instance of NeuralSeek today.
 
 ### IBM cloud
 
