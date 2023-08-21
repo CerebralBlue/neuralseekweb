@@ -28,6 +28,7 @@ NeuralSeek supports the following Large Language Models (LLM) as of July of 2023
 
 Not all LLMs have equal amount of capabilities, and some of them may have limitation in some ways. Below table summarizes some of the notes on using these models.
 ## LLM Capabilities Notes
+
 |LLM|Notes|
 |---|---|
 |Azure OpenAI GPT 3.5|GPT-3.5 provides a good balance of speed and capability.|
