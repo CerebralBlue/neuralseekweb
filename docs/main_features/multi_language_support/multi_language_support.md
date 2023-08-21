@@ -11,6 +11,7 @@ order: 12
 NeuralSeek has several different language options available for understanding questions and delivering answers. These include English, Spanish, Portuguese, French, German, Italian, Arabic, Korean, Chinese, Czech, Dutch, Indonesian, and Japanese. These can be adjusted on the “Configure” section of the NeuralSeek console, or on the “Seek” endpoint.
 
 ### Supported Languages
+
 |Language|Lang code|
 |---|---|
 |English|en|
