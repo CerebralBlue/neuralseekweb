@@ -20,7 +20,7 @@ NeuralSeek supports the following Large Language Models (LLM) as of July of 2023
 - WatsonX - flan-t5-xxl
 - WatsonX - mpt-7b-instruct
 
-> 💡 The LLM type are available with NeuralSeek’s BYOLLM (bring your own LLM) pricing plan. By default, NeuralSeek is using OpenAI GPT 3.5
+> 💡 The LLM type are available with NeuralSeek’s BYOLLM (bring your own LLM) pricing plan. By default, NeuralSeek is using a carefully selected and crafted pre-fabricated large language model.
 
 > 💡 LLMs can vary in their capabilities and performances. Some LLM can take up to 30 seconds and longer to generate a full response. Use caution when using in conjunction with a virtual agent platform that imposes a strict timeout.
 
