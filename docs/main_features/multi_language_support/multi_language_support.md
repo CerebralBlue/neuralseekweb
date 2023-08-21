@@ -10,6 +10,67 @@ order: 12
 ## What is it?
 NeuralSeek has several different language options available for understanding questions and delivering answers. These include English, Spanish, Portuguese, French, German, Italian, Arabic, Korean, Chinese, Czech, Dutch, Indonesian, and Japanese. These can be adjusted on the “Configure” section of the NeuralSeek console, or on the “Seek” endpoint.
 
+### Supported Languages
+|Language|Lang code|
+|---|---|
+|English|en|
+|Match Input|xx|
+|Arabic|ar|
+|Basque|eu|
+|Bengali|bn|
+|Bosnian|bs|
+|Bulgarian|bg|
+|Catalan|ca|
+|Chinese (Simplified)|zh-cn|
+|Chinese (Traditional)|zh-tw|
+|Croatian|hr|
+|Czech|cs|
+|Danish|da|
+|Dutch|nl|
+|Estonian|et|
+|Finnish|fi|
+|French|fr|
+|German|de|
+|Greek|el|
+|Gujarati|gu|
+|Hebrew|he|
+|Hindi|hi|
+|Hungarian|hu|
+|Irish|ga|
+|Indonesian|id|
+|Italian|it|
+|Japanese|ja|
+|Kannada|kn|
+|Korean|ko|
+|Latvian|lv|
+|Lithuanian|lt|
+|Malay|ms|
+|Malayalam|ml|
+|Maltese|mt|
+|Marathi|mr|
+|Montenegrin|cnr|
+|Nepali|ne|
+|Norwegian Bokmål|nb|
+|Polish|pl|
+|Portuguese|pt-br|
+|Punjabi|pa|
+|Romanian|ro|
+|Russian|ru|
+|Serbian|sr|
+|Sinhala|si|
+|Slovak|sk|
+|Slovenian|sl|
+|Spanish|es|
+|Swedish|sv|
+|Tamil|ta|
+|Telugu|te|
+|Thai|th|
+|Turkish|tr|
+|Ukrainian|uk|
+|Urdu|ur|
+|Vietnamese|vi|
+|Welsh|cy|
+
 Match Input Feature: NeuralSeek can understand and support conversations that are initiated in languages other than the ones listed through the Match Input Feature. On the “Seek” endpoint, click the dropdown for language navigation and click “Match Input.
 
 ## Why is it important?
