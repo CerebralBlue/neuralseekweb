@@ -24,6 +24,9 @@ Message payload is in JSON format, and contains array of `text` in certain langu
   "target": "ko"
 }
 ```
+
+> For more details on what language codes are supported, please refer to [Multi Language Support](../multi_language_support).
+
 NeuralSeek would then translate the tiven text into the target language `ko` which is Korean:
 ```JSON
 {
