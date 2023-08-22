@@ -35,7 +35,7 @@
       --color-fg-header: #FFFFFF;
       --color-fg-muted: #8b949e;
       --color-fg-subtle: #6e7681;
-      --color-canvas-default: #2187e0;
+      --color-canvas-default: #0D67B4;
       --image-canvas-default: linear-gradient(180deg, #0D67B4 30%, #2C8FA7 60%);
       --color-canvas-subtle: #68aeeb;
       --color-border-default: #8badde;
@@ -786,7 +786,8 @@
     padding: .2em .4em;
     margin: 0;
     font-size: 85%;
-    white-space: break-spaces;
+    /* white-space: break-spaces; */
+    white-space: normal;
     background-color: var(--color-neutral-muted);
     border-radius: 6px;
   }
@@ -813,6 +814,7 @@
     margin: 0;
     word-break: normal;
     /* white-space: pre; */
+    white-space: break-spaces;
     background: transparent;
     border: 0;
   }
@@ -856,7 +858,8 @@
     font-size: 12px;
     line-height: 1;
     text-align: left;
-    white-space: nowrap;
+    /* white-space: nowrap; */
+    white-space: normal;
   }
   
   .markdown-body .csv-data .blob-num {

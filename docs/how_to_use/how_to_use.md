@@ -13,15 +13,15 @@ NeuralSeek is a SaaS solution. The most popular and easiest way to use NeuralSee
 
 ### IBM cloud
 
-Visit [https://cloud.ibm.com/catalog/services/neuralseek](https://cloud.ibm.com/catalog/services/neuralseek) for details about NeuralSeek’s available plan, features, and other resources.
+Visit [NeuralSeek catalog in IBM cloud](https://cloud.ibm.com/catalog/services/neuralseek) for details about NeuralSeek’s available plan, features, and other resources.
 
 ### AWS marketplace
 
-Visit [https://aws.amazon.com/marketplace/pp/prodview-d7cymwnii2xrq](https://aws.amazon.com/marketplace/pp/prodview-d7cymwnii2xrq) for details about NeuralSeek’s available plan, features, and other resources.
+Visit [NeuralSeek catalog in AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-d7cymwnii2xrq) for details about NeuralSeek’s available plan, features, and other resources.
 
 ## Videos
 
-- [https://www.youtube.com/@Cerebral_Blue/featured](https://www.youtube.com/@Cerebral_Blue/featured): There are many helpful videos available to learn about NeuralSeek and its features.
+- [NeuralSeek Youtube Channel](https://www.youtube.com/@Cerebral_Blue/featured): There are many helpful videos available to learn about NeuralSeek and its features.
 
 ## Demos
 
@@ -29,7 +29,7 @@ Sign up for a demo which can be a fast and easy way to learn how NeuralSeek work
 
 ## Training
 
-- [https://academy.neuralseek.com/](https://academy.neuralseek.com/) is the website that hosts NeuralSeek academy, where you can go through a self-pace training to study and learn about its features via tutorials, hands-on-lab, and additional resources. Please reach out to [support@neuralseek.com](mailto:support@neuralseek.com) to access the academy.
+- [NeuralSeek Academy](https://academy.neuralseek.com/) is the website that hosts NeuralSeek academy, where you can go through a self-pace training to study and learn about its features via tutorials, hands-on-lab, and additional resources. Please reach out to [support@neuralseek.com](mailto:support@neuralseek.com) to access the academy.
 
 ## Use Cases
 
