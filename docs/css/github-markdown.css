@@ -35,9 +35,9 @@
       --color-fg-header: #FFFFFF;
       --color-fg-muted: #8b949e;
       --color-fg-subtle: #6e7681;
-      --color-canvas-default: #0D67B4;
+      --color-canvas-default: #2187e0;
       --image-canvas-default: linear-gradient(180deg, #0D67B4 30%, #2C8FA7 60%);
-      --color-canvas-subtle: #4494d9;
+      --color-canvas-subtle: #68aeeb;
       --color-border-default: #8badde;
       --color-border-muted: #8badde;
       --color-neutral-muted: rgba(110,118,129,0.4);
