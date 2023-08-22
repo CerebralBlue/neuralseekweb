@@ -2,7 +2,7 @@
     .hr_menu {
       color-scheme: dark;
       --color-neuralseek-menu-selected: #FFFFFF;
-      --color-neuralseek-menu-hover: #235cb0;
+      --color-neuralseek-menu-hover: #528be8;
     }
     .current_page {
       color-scheme: dark;
@@ -17,49 +17,53 @@
   @media (prefers-color-scheme: light) {
     .hr_menu {
       color-scheme: light;
-      --color-neuralseek-menu-selected: rgb(33, 33, 33);
-      --color-neuralseek-menu-hover: #b8cdeb;
+      --color-neuralseek-menu-selected: #FFFFFF;
+      --color-neuralseek-menu-hover: #528be8;
     }
     .current_page {
       color-scheme: light;
-      --selected: black;
+      --selected: white;
     }
     .content {
       color-scheme: light;
-      --pre: black;
+      --pre: light-gray;
     }
   }
 
   /* for smaller screens */
   @media (max-width: 600px) {
     .title {
-      flex-direction: column;
+      flex-direction: row;
     }
     .logo, 
     .top-menu {
-      flex: auto;
+      flex:auto;
     }
   }
 
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 1em;
+    min-height: 100vh;
+    display:flex; 
+    flex-direction:row; 
+    justify-content:center;
 }
 
 .title {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
 }
 
 .logo {
   flex: 1;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
 
 .logo img {
-  min-height: 300px;
-  width: auto;
+  min-height: 100px;
+  width: 70%;
   display: block;
 }
 
@@ -75,14 +79,26 @@ div.logo-50 {
 }
 
 a.selected {
-    color: var(--color-neuralseek-menu-selected) !important;
     font-weight: bolder;
-    text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: white;
+}
+
+a span {
+  text-decoration: none !important;
+}
+
+a span:hover {
+  color: var(--color-neuralseek-menu-hover) !important;
+  text-decoration: none !important;
 }
 
 main img {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 12px;
 }
@@ -109,8 +125,8 @@ main img {
 }
 
 .hr_menu li:hover a {
-    color: white;
-    text-decoration: none;
+    color: white !important;
+    text-decoration: none !important;
 }
 
 .current_page {
@@ -120,4 +136,15 @@ main img {
 
 .content pre {
     color: var(--pre);
+}
+
+.copyright {
+  padding-top: 100px;
+  width:100%;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+code {
+  color:aliceblue;
 }

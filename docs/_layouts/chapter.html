@@ -4,20 +4,22 @@
     <meta charset="utf-8"/>
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/svg" href="{{ site.url }}{{ site.baseurl }}/images/ns-white.svg">
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <style>
       @media (min-width: 768px) {
           .sidebar {
-              min-width: 200px;
-              position: absolute;
+              min-width: 250px;
+              position: relative;
               top: 0;
               bottom: 0;
               left: 0;
               z-index: 100;
-              padding: 0 0 0 0;
+              margin-right:20px;
+              display: block;
+              float:left;
           }
 
           .navbar-top { 
@@ -28,6 +30,7 @@
     {% include analytics.html %}
   </head>
   <body class="markdown-body">
+    <div style="max-width:1200px;">
     <!-- Top Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none navbar-top">
       <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">NeuralSeek Documentation</a>
@@ -41,7 +44,7 @@
 
     <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar">
       <div class="sidebar-sticky">
-        <div style="text-align:center;padding-top:40px;padding-bottom:20px;"><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" style="min-width:100px;height:auto" /></a></div>
+        <div style="text-align:center;padding-top:30px;padding-bottom:20px;"><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeek-Logo-White.svg" style="min-width:80px;width:80%;height:auto" /></a></div>
         <div>
           {% include side_menu.html %}
         </div>
@@ -49,7 +52,7 @@
     </nav>
 
     <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
-      <div style="padding-left:50px; padding-right:50px">
+      <div class="content" style="padding-left:10px;">
       {{ content }}
       </div>
       <div class="hr_menu">
@@ -68,5 +71,7 @@
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div class="copyright">Ⓒ 2023 NeuralSeek, all rights reserved.</div>
+    </div>
   </body>
 </html>
