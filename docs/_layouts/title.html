@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     {% include analytics.html %}
   </head>
-  <body class="markdown-body">
+  <body class="markdown-body" id="page_body">
     <div class="container">
       <div class="title">
-        <div class="logo"><center><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeek-Logo-White.svg"/></a></center></div>
+        <div class="logo"><center><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeek-Logo-White.svg" style="background-color: transparent;"/></a></center></div>
           <section class="content">
             {{ content }}
           </section>
@@ -32,4 +34,21 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
+  <script>
+    VANTA.NET({
+      el: "#page_body",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x2187E0,
+      backgroundColor: 0x0D67B4,
+      points: 10.00,
+      maxDistance: 20.00,
+      spacing: 5.00
+    })
+    </script>
 </html>
