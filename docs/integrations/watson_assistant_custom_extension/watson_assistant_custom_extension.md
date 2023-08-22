@@ -22,4 +22,4 @@ Use the custom extension to call NeuralSeek within Watson Assistant's "Actions" 
 
 ## More information about Watson Assistant NeuralSeek Extension
 Please refer to the following documentation for more information regarding NeuralSeek starter-kit available on Watson Assistant Extension.
-[NeuralSeek Starter Kit](https://github.com/watson-developer-cloud/assistant-toolkit/tree/master/integrations/extensions/starter-kits/neuralseek)
+[https://github.com/watson-developer-cloud/assistant-toolkit/tree/master/integrations/extensions/starter-kits/neuralseek](https://github.com/watson-developer-cloud/assistant-toolkit/tree/master/integrations/extensions/starter-kits/neuralseek)
