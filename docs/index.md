@@ -1,8 +1,10 @@
 ---
-title: Welcome to NeuralSeek Documentation
+title: NeuralSeek Documentation
 permalink: /
 layout: title
 parent: root
 ---
 
-# 📖 Welcome to NeuralSeek Documentation
+# Documentation
+
+---

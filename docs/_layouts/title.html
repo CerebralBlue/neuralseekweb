@@ -12,20 +12,21 @@
   </head>
   <body class="markdown-body">
     <div class="container">
-      <section class="title content">
-        {{ content }}
-      </section>
       <div class="title">
-        <div class="logo"><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeekLogoIcon.svg" /></a></div>
-        <nav class="top-menu">
+        <div class="logo"><center><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeek-Logo-White.svg"/></a></center></div>
+          <section class="content">
+            {{ content }}
+          </section>
+        <div class="hr_menu">
           {% assign pages = site.pages | where: "parent", "/" | sort: "order" %}
           <ul>
           {% for apage in pages %}
           <li><a href="{{ site.url }}{{ site.baseurl }}{{ apage.url }}">{{ apage.title }}</a></li>
           {% endfor %}
           </ul>
-        </nav>
+        </div>
       </div>
+      <div class="copyright">Ⓒ 2023 NeuralSeek, all rights reserved.</div>
     </div>
     <!-- Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
