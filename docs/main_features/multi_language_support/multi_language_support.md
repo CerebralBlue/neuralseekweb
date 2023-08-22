@@ -8,7 +8,7 @@ order: 12
 # Multi Language Support
 
 ## What is it?
-NeuralSeek has several different language options available for understanding questions and delivering answers. These include English, Spanish, Portuguese, French, German, Italian, Arabic, Korean, Chinese, Czech, Dutch, Indonesian, and Japanese. These can be adjusted on the “Configure” section of the NeuralSeek console, or on the “Seek” endpoint.
+NeuralSeek has several different language options available for understanding questions and delivering answers. These include English, Spanish, Portuguese, French, German, Italian, Arabic, Korean, Chinese, Czech, Dutch, Indonesian, Japanese, and more. These can be adjusted on the “Configure” section of the NeuralSeek console, or on the “Seek” endpoint. Please see the below table for the full list of supported languages.
 
 ### Supported Languages
 
