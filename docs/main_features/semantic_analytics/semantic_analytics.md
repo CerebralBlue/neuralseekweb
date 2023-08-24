@@ -32,7 +32,7 @@ Configuration option for Semantic analysis is found under `Configure > Confidenc
 ### Using Semantic Analysis
 In the ‘Seek’ tab of NeuralSeek, you can provide a question, and be given an answer from NeuralSeek. When enabling the ‘Highlight Answer Provenance,’ this will give you the color-coded portion of the response that were directly originated from those results.
 
-![turning on provenance](images/image_004.png){: width="300px" }
+![turning on provenance](images/image_004.png){: style="width:25%" }
 
 Below the answer, you will see some of the key insights related to the answer, such as `Semantic Match score (in %)`, `Semantic Analysis`, as well as results coming from KnowledgeBase in terms of `KB Confidence`, `KB Coverage`, `KB Response Time`, and `KB Results`.
 
