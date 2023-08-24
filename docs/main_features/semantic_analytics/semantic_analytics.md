@@ -27,6 +27,8 @@ Configuration option for Semantic analysis is found under `Configure > Confidenc
 
 ![configuring semantic analytics](images/image_003.png)
 
+> ❓ How re-ranking the search result using semantic analysis can be helpful? Having an option to re-rank the resulting KnowledgeBase search results can ensure the list of search results to appear in the order that corresponds better to the answer provided. That is because sometimes the search results returned from the KnowledgeBase does not align perfectly with the answer, and thus provided URL of the resulting document can be misleading.
+
 ### Using Semantic Analysis
 In the ‘Seek’ tab of NeuralSeek, you can provide a question, and be given an answer from NeuralSeek. When enabling the ‘Highlight Answer Provenance,’ this will give you the color-coded portion of the response that were directly originated from those results.
 
