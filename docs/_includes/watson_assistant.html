@@ -44,6 +44,28 @@ window.watsonAssistantChatOptions = {
                     var item = generic[i];
                     if(item.response_type == "text") {
                         var text = item.text;
+                        if(text != "" && text.toUpperCase().startsWith("[[URL]]")) {
+                            // get the array delimited with '|'
+                            args = text.substring(7).split('|');
+                            if(args.length > 0) {
+                                url = args[0];
+                                page_name = "web page";
+                                target = "_self";
+                                if(args.length > 1) {
+                                    page_name = args[1];
+                                }
+                                if(args.length > 2) {
+                                    target = args[2];
+                                }
+                                item.text = `Great, let me take you to the ${page_name}.`;
+                                setTimeout(()=>{
+								    instance.closeWindow();
+								    window.open(url, target);
+							    }, 1500);
+                            } else {
+                                item.text = "Sorry, did not understand which URL to load.";
+                            }
+                        }
                         if(text != "" && text.toUpperCase().startsWith("[[DEMO]]")) {
                             item.text = "Great, let me take you to our demo request form.";
 							setTimeout(()=>{
