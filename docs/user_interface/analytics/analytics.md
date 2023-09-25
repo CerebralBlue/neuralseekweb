@@ -2,7 +2,7 @@
 title: Analytics
 permalink: /user_interface/analytics/
 parent: user_interface
-order: 7
+order: 8
 ---
 
 # Analytics
