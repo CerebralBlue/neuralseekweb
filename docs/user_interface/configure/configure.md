@@ -13,20 +13,10 @@ This location of NeuralSeek is where users can edit the configurations for Neura
 
 ## Default Configurations
 
-- **Corporate KnowledgeBase Details:** users can change their KnowledgeBase type, the url and API key, adjust score settings (Document score range, Document date penalty), snippet size, and cache timeout for the cached content processed from KnowledgeBase. Currently three types of KnowledgeBase are supported:
-    - Watson Discovery
-    - Watson Discovery CP4D (CloudPak for Data)
-    - Elastic AppSearch
+- **Corporate KnowledgeBase Details:** users can change their KnowledgeBase type, the url and API key, adjust score settings (Document score range, Document date penalty), snippet size, and cache timeout for the cached content processed from KnowledgeBase. See our supported [KnowledgeBase page]({{site.baseurl}}{% link integrations/supported_knowledgebases/supported_knowledgebases.md %}).
 - **LLM Details:** This is where users can set or modify their LLM model settings, such as URL for the model endpoint, and API keys. **This section is only available if you are using BYOLLM (bring your own LLM) plan of NeuralSeek**.
 - **Company/Organization Preferences:** This is where you can enter your company name, and description of what the company primarily focuses on. Note that the description is also used as a `stump speech` which is a block of text to be used to help generate a response when all else fails, and the answer needs to fall back to it.
-- **Platform Preferences:** This is where you can set up your primary default language (e.g. English), whether the response would contain the embedded link into returned responses, and also virtual agent type that NeuralSeek can generate its questions and answers to. Currently the following virtual agent types are supported:
-    - AWS Lex V2
-    - Azure Knowledge Base
-    - Cognigy
-    - Kore.ai
-    - Watson Assistant Action
-    - Watson Assistant Dialog
-    - Web HTML (None)
+- **Platform Preferences:** This is where you can set up your primary default language (e.g. English), whether the response would contain the embedded link into returned responses, and also virtual agent type that NeuralSeek can generate its questions and answers to. See our supported [Virtual Agent platforms page]({{site.baseurl}}{% link integrations/supported_virtual_agents/supported_virtual_agents.md %}).
 - **Intent Categorization:** This is where you can create type of categories and their descriptions to control how some of the intents in user question can be categorized into. Usually a question would be automatically categorized as `FAQ` , but you can provide additional ones here.
 - **Confidence & Warning Thresholds:** Adjust misinformation tolerance, warning confidence, semantic score, minimum confidence, minimum text, maximum length, and various penalty score ranges.
 

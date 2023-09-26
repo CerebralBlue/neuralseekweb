@@ -15,4 +15,4 @@ Highlight Answer Provenance: Enabling this feature reveals how the majority of r
 
 Users can personalize and filter through their KnowledgeBase documents on the Seek tab as well.
 
-For more information, see [Semantic Analytics](https://www.notion.so/Semantic-Analytics-237a4a6d3c124be4b473ca49ed7a662a?pvs=21).
+For more information, see [Semantic Analytics]({{site.baseurl}}{% link main_features/sentiment_analysis/sentiment_analysis.md %}).

@@ -72,16 +72,16 @@ NeuralSeek has several different language options available for understanding qu
 |Vietnamese|vi|
 |Welsh|cy|
 
-Match Input Feature: NeuralSeek can understand and support conversations that are initiated in languages other than the ones listed through the Match Input Feature. On the “Seek” endpoint, click the dropdown for language navigation and click “Match Input.
+Match Input Feature: NeuralSeek can understand and support conversations that are initiated in languages other than the ones listed through the Match Input Feature. On the “Seek” endpoint, click the dropdown for language navigation and click "Match Input".
 
 ## Why is it important?
 Being able to automatically translate answers to an appropriate language without relying on virtual agent is important, as this greatly simplifies running it. Instead of having to train your virtual agents to understand various different languages, your question can be automatically converted into the response in the language of your choice.
 
 ## How does it work?
-NeuralSeek will try to determine if the user is asking question in certain language (e.g. Spanish), and will try to conver the resopnses into the language that the user asked without any additional set ups.
+NeuralSeek will try to determine if the user is asking question in certain language (e.g. Spanish), and will try to convert the responses into the language that the user asked without any additional set ups.
 
 ### Specifying a langauage
 If you would like to specify certain target language that you want NeuralSeek to generate answers into, you can do so by specifying a language code (e.g. es) in the request when you are invoking `Seek`.
 ![lang selection](images/image-001.png)
 
-The same can be achieved when you are invoking `Seek` using REST API. You can specify the langauge under the `options > language`.
+The same can be achieved when you are invoking `Seek` using REST API. You can specify the language under the `options > language`.
