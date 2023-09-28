@@ -40,3 +40,9 @@ NeuralSeek can integrate with Virtual Agents/Chatbots such as IBM Watson Assista
 ### Internal Organization Tool
 
 NeuralSeek can be used as an internal organization tool for companies with large amounts of data/documentation to sort through. Through the “Seek”, “Curate”, and “Analytics” section, NeuralSeek allows a company to share information from a virtual agent to an employee/user without delegating to live agents in the business. NeuralSeek provides managers a solution to aid their employees when they feel as though they don’t have the bandwidth to support large & vastly unique demographics. It maintains conversational context to provide users with concrete answers to each and every question that they present to the virtual agent.
+
+### Internal Content Managing
+
+The NeuralSeek "Explore" feature is a verstile tool designed to make the most of Large Language Models (LLMs) in a user-friendly way. It serves as an internal content manager, offering the choice of LLM, NeuralSeek Template Language for queries, versatile data retrieval, content enhancement, guided prompts, and effortless output. "Explore" is your go-to tool for managing and improving content within your organization using the power of LLMs.
+
+
