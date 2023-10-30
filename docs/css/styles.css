@@ -42,8 +42,9 @@
   }
 
 body {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     min-height: 100vh;
     display:flex; 
     flex-direction:row; 
@@ -112,11 +113,13 @@ main img {
 .hr_menu li {
     display: inline-block;
     border-radius: 10px;
+    background: var(--color-canvas-sidebar);
   }
 
 .hr_menu li a {
     display: block;
-    padding: 10px;
+    padding: 8px;
+    text-decoration: none;
     text-decoration: none;
     color: #F0F0F0;
 }
@@ -148,4 +151,8 @@ main img {
 
 code {
   color:aliceblue;
+}
+
+.header-bg {
+  background-color: var(--color-canvas-sidebar);
 }
