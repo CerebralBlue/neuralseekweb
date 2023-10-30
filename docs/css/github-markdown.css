@@ -2,13 +2,13 @@
     .markdown-body {
       color-scheme: dark;
       --color-prettylights-syntax-comment: #8b949e;
-      --color-prettylights-syntax-constant: #79c0ff;
+      --color-prettylights-syntax-constant: #50adff;
       --color-prettylights-syntax-entity: #d2a8ff;
       --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
       --color-prettylights-syntax-entity-tag: #7ee787;
       --color-prettylights-syntax-keyword: #ff7b72;
       --color-prettylights-syntax-string: #a5d6ff;
-      --color-prettylights-syntax-variable: #ffa657;
+      --color-prettylights-syntax-variable: #f2984b;
       --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
       --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
       --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
@@ -31,17 +31,19 @@
       --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
       --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
       --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-      --color-fg-default: #E0E0E0;
-      --color-fg-header: #FFFFFF;
+      --color-fg-default: #000000;
+      --color-fg-header: #185183;
       --color-fg-muted: #8b949e;
       --color-fg-subtle: #6e7681;
-      --color-canvas-default: #0D67B4;
-      --image-canvas-default: linear-gradient(180deg, #0D67B4 30%, #2C8FA7 60%);
-      --color-canvas-subtle: #68aeeb;
+      --color-canvas-sidebar: #185183;
+      --color-canvas-default: #f8f8f8;  
+      --image-canvas-default: linear-gradient(180deg, #185183 30%, #2C8FA7 60%);
+      --color-canvas-subtle: #96c3eb;
       --color-border-default: #8badde;
       --color-border-muted: #8badde;
       --color-neutral-muted: rgba(110,118,129,0.4);
-      --color-accent-fg: #58a6ff;
+      --color-accent-fg: #88c0ff;
+      --color-accent-hover-fg: #f2984b;
       --color-accent-emphasis: #1f6feb;
       --color-attention-subtle: rgba(187,128,9,0.15);
       --color-danger-fg: #f85149;
@@ -52,13 +54,13 @@
     .markdown-body {
       color-scheme: light;
       --color-prettylights-syntax-comment: #8b949e;
-      --color-prettylights-syntax-constant: #79c0ff;
+      --color-prettylights-syntax-constant: #50adff;
       --color-prettylights-syntax-entity: #d2a8ff;
       --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
       --color-prettylights-syntax-entity-tag: #7ee787;
       --color-prettylights-syntax-keyword: #ff7b72;
       --color-prettylights-syntax-string: #a5d6ff;
-      --color-prettylights-syntax-variable: #ffa657;
+      --color-prettylights-syntax-variable: #f2984b;
       --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
       --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
       --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
@@ -81,17 +83,19 @@
       --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
       --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
       --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
-      --color-fg-default: #E0E0E0;
-      --color-fg-header: #FFFFFF;
+      --color-fg-default: #000000;
+      --color-fg-header: #185183;
       --color-fg-muted: #8b949e;
       --color-fg-subtle: #6e7681;
-      --color-canvas-default: #0D67B4;
-      --image-canvas-default: linear-gradient(180deg, #0D67B4 30%, #2C8FA7 60%);
-      --color-canvas-subtle: #4494d9;
+      --color-canvas-sidebar: #185183;
+      --color-canvas-default: #f8f8f8; 
+      --image-canvas-default: linear-gradient(180deg, #185183 30%, #2C8FA7 60%);
+      --color-canvas-subtle: #96c3eb;
       --color-border-default: #8badde;
       --color-border-muted: #8badde;
       --color-neutral-muted: rgba(110,118,129,0.4);
-      --color-accent-fg: #58a6ff;
+      --color-accent-fg: #88c0ff;
+      --color-accent-hover-fg: #f2984b;
       --color-accent-emphasis: #1f6feb;
       --color-attention-subtle: rgba(187,128,9,0.15);
       --color-danger-fg: #f85149;
@@ -105,10 +109,20 @@
     color: var(--color-fg-default);
     background-color: var(--color-canvas-default);
     /* background-image: var(--image-canvas-default); */
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    /* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; */
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     word-wrap: break-word;
+  }
+
+  body#title_body {
+    background-color: var(--color-canvas-sidebar);
+  }
+
+  body#title_body h1,
+  body#title_body .copyright {
+    color: var(--color-canvas-default);
   }
   
   .markdown-body .octicon {
@@ -149,6 +163,27 @@
   .markdown-body a {
     background-color: transparent;
     color: var(--color-accent-fg);
+    text-decoration: none;
+  }
+  
+  .markdown-body .content a {
+    color: var(--color-fg-header);
+  }
+  
+  .markdown-body a:hover {
+    background-color: transparent;
+    color: var(--color-accent-hover-fg);
+    text-decoration: none;
+  }
+
+  .markdown-body .sidebar {
+    background-color: var(--color-canvas-sidebar);
+    height: 100%;
+  }
+
+  .markdown-body .sidebar a:hover {
+    background-color: transparent;
+    color: var(--color-accent-hover-fg);
     text-decoration: none;
   }
   
@@ -201,7 +236,7 @@
   
   .markdown-body img {
     border-style: none;
-    max-width: 100%;
+    max-width: 1200px;
     box-sizing: content-box;
     background-color: var(--color-canvas-default);
   }
@@ -217,7 +252,7 @@
   .markdown-body figure {
     margin: 1em 40px;
   }
-  
+
   .markdown-body hr {
     box-sizing: content-box;
     overflow: hidden;
@@ -370,13 +405,13 @@
     margin-bottom: 16px;
     font-weight: var(--base-text-weight-semibold, 600);
     line-height: 1.25;
+    color: var(--color-fg-header);
   }
   
   .markdown-body h2 {
     font-weight: var(--base-text-weight-semibold, 600);
     padding-bottom: .3em;
     font-size: 1.5em;
-    color: var(--color-fg-header);
   }
   
   .markdown-body h3 {
