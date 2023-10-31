@@ -45,7 +45,5 @@ order: 2
 ## Data Policy
 All user data and generated answers are owned by and for the sole use of the customer. 
 
-See our [Data Security and Privacy]({{ site.baseurl }}{% link data_security_and_privacy/data_security_and_privacy.md %}) page for more info.
-
 It is your responsibility to regularly backup curated content. There is no option to configure product availablilty at this time.
  
