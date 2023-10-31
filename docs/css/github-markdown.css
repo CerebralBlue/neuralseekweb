@@ -512,6 +512,7 @@
   
   .markdown-body>*:first-child {
     margin-top: 0 !important;
+    width: 100%;
   }
   
   .markdown-body>*:last-child {
@@ -692,7 +693,7 @@
   
   .markdown-body table th {
     font-weight: var(--base-text-weight-semibold, 600);
-    background-color: #263c5b;
+    background-color: var(--color-canvas-subtle);
   }
   
   .markdown-body table th,
