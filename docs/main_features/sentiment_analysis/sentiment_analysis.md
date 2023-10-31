@@ -2,7 +2,7 @@
 title: Sentiment Analysis
 permalink: /main_features/sentiment_analysis/
 parent: main_features
-order: 7
+order: 17
 ---
 
 # Sentiment Analysis

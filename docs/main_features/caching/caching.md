@@ -2,7 +2,7 @@
 title: Caching
 permalink: /main_features/caching/
 parent: main_features
-order: 4
+order: 3
 ---
 
 # Caching

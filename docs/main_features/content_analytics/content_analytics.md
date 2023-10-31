@@ -2,7 +2,7 @@
 title: Content Analytics
 permalink: /main_features/content_analytics/
 parent: main_features
-order: 2
+order: 4
 ---
 
 # Content Analytics

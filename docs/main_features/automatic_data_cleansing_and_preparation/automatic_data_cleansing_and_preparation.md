@@ -2,7 +2,7 @@
 title: Automatic Data Cleansing And Perparation
 permalink: /main_features/automatic_data_cleansing_and_preparation/
 parent: main_features
-order: 14
+order: 1
 ---
 
 # Automatic Data Cleansing And Preparation

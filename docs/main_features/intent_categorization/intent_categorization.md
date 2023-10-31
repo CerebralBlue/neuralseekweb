@@ -2,7 +2,7 @@
 title: Intent Categorization
 permalink: /main_features/intent_categorization/
 parent: main_features
-order: 8
+order: 11
 ---
 
 # Intent Categorization

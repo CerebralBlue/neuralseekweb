@@ -2,8 +2,7 @@
 title: Explore Platform
 permalink: /main_features/explore_platform
 parent: main_features
-order: 19
-render_with_liquid: false
+order: 9
 ---
 
 # Explore Platform

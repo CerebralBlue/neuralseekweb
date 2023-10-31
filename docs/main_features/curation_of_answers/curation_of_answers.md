@@ -2,7 +2,7 @@
 title: Curation Of Answers
 permalink: /main_features/curation_of_answers/
 parent: main_features
-order: 3
+order: 6
 ---
 
 # Curation Of Answers
