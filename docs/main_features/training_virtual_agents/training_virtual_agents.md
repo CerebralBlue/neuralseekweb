@@ -2,7 +2,7 @@
 title: Training Virtual Agents
 permalink: /main_features/training_virtual_agents/
 parent: main_features
-order: 5
+order: 19
 ---
 
 # Training Virtual Agents

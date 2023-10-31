@@ -2,7 +2,7 @@
 title: Semantic Analytics
 permalink: /main_features/semantic_analytics/
 parent: main_features
-order: 1
+order: 16
 ---
 
 # Semantic Analytics

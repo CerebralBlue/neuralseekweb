@@ -2,7 +2,7 @@
 title: Backup and Restore
 permalink: /main_features/backup_and_restore/
 parent: main_features
-order: 18
+order: 2
 ---
 
 # Backup and Restore 
@@ -44,8 +44,6 @@ order: 18
 
 ## Data Policy
 All user data and generated answers are owned by and for the sole use of the customer. 
-
-See our [Data Security and Privacy]({{ site.baseurl }}{% link data_security_and_privacy/data_security_and_privacy.md %}) page for more info.
 
 It is your responsibility to regularly backup curated content. There is no option to configure product availablilty at this time.
  

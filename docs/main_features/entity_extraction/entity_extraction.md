@@ -2,7 +2,7 @@
 title: Entity Extraction
 permalink: /main_features/entity_extraction/
 parent: main_features
-order: 6
+order: 8
 ---
 
 # Entity Extraction

@@ -2,7 +2,7 @@
 title: Identify Language
 permalink: /main_features/identify_language/
 parent: main_features
-order: 17
+order: 10
 ---
 
 # Identify Language

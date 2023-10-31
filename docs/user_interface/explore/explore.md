@@ -3,7 +3,6 @@ title: Explore
 permalink: /user_interface/explore
 parent: user_interface
 order: 5
-render_with_liquid: false
 ---
 ![explore-feature-1](images/explore-feature-1.png)
 

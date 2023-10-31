@@ -7,7 +7,7 @@ order:
 
 # Supported KnowledgeBases
 
-NeuralSeek supports the following types of Corporate KnowledgeBases as of July 2023:
+NeuralSeek supports the following KnowledgeBases:
 
 - Watson Discovery ([https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-about](https://cloud.ibm.com/docs/discovery-data?topic=discovery-data-about))
 - Elastic AppSearch ([https://www.elastic.co/guide/en/app-search/current/index.html](https://www.elastic.co/guide/en/app-search/current/index.html))
@@ -23,7 +23,7 @@ Setting up the integration to KnowledgeBase is done in `Configure > Corporate Kn
     1. Watson Discovery
     2. Watson Discovery CP4D (CloudPak for Data)
     3. Elastic AppSearch
-    4. Kendra Support
+    4. AWS Kendra 
     5. OpenSearch
 3. Enter necessary information such as service URL, API Key, and additional information like project ID, etc.
 4. Click Save.

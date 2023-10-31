@@ -2,7 +2,7 @@
 title: Dynamic Personalization
 permalink: /main_features/dynamic_personalization/
 parent: main_features
-order: 10
+order: 7
 ---
 
 # Dynamic Personalization

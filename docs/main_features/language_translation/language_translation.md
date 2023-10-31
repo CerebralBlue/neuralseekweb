@@ -2,7 +2,7 @@
 title: Language Translation
 permalink: /main_features/language_translation/
 parent: main_features
-order: 16
+order: 12
 ---
 
 # Language Translation

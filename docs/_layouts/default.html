@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/github-markdown.css"/>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <style>
       @media (min-width: 768px) {
           .sidebar {
-              min-width: 250px;
+              min-width: 280px;
               position: relative;
               top: 0;
               bottom: 0;
               left: 0;
               z-index: 100;
-              margin-right:20px;
+              margin-right:30px;
               display: block;
               float:left;
           }
@@ -31,27 +32,28 @@
     {% include watson_assistant.html %}
   </head>
   <body class="markdown-body">
-    <div style="max-width:1200px;">
+    <div style="display: block;">
     <!-- Top Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-md-none navbar-top">
+    <nav class="navbar navbar-expand-lg navbar-dark header-bg d-md-none navbar-top">
       <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">NeuralSeek Documentation</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
+          {% include side_menu_static_entries.html %}
           {% include side_menu.html %}
       </div>
     </nav>
-
+    
     <nav class="col-md-3 col-lg-2 d-none d-md-block sidebar">
       <div class="sidebar-sticky">
         <div style="text-align:center;padding-top:30px;padding-bottom:20px;"><a href="https://neuralseek.com"><img src="{{ site.url }}{{ site.baseurl }}/images/NeuralSeek-Logo-White.svg" style="min-width:80px;width:80%;height:auto;background-color:transparent;" /></a></div>
         <div>
+          {% include side_menu_static_entries.html %}
           {% include side_menu.html %}
         </div>
       </div>
     </nav>
-
     <main class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <div class="content" style="padding-left:30px;padding-right:30px;">
       {{ content }}
