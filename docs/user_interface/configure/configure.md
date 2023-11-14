@@ -7,7 +7,7 @@ order: 2
 
 # Configure
 
-![configure](images/configure.png)
+![configure](images/configure_updated.png)
 
 This location of NeuralSeek is where users can edit the configurations for NeuralSeek’s features. There are two types of configurations: Default Configurations and Advanced Configurations.
 
@@ -27,3 +27,11 @@ This location of NeuralSeek is where users can edit the configurations for Neura
 - **Intent Matching & Cache Configuration:** Here is where you can configure strategies to perform intent matching. The following types are available: Exact, Fuzzy, Keyword, and Fuzzy Keyword. You can also configure how the answer caching is to be done for edited answers, and normal answers. You can control the number of answers that would trigger the cache, as well as their individual matching methods.
 - **Table Understanding:** Table understanding pre-processes your documents to extract and parse tabular data into a format suitable for conversational query. Since this preparation process is both costly and time consuming, this feature is opt-in and will consume 1 seek query for every table preprocessed. Web Crawl Collections are not eligible for table understanding, as the re-crawl interval will cause excessive compute usage. Table preparation time takes several minutes per page. Please contact [cloud@cerebralblue.com](mailto:cloud@cerebralblue.com) with details of your opportunity and use case to be considered for access.
 - **Personal Identifiable Information (PII) Handling:** Here, you can define how to handle any detected PII data that was included in the question. The following options are available: Mask, Flag, No Action, Hide (retain for Analytics), and Delete. The configuration also lets you add any particular examples of PII data, so it can be better detected, or set as `No PII` so that it can be ignored.
+- **Corporate Document Filter:** Connect NeuralSeek to an external corporate rules engine to filter allowed documentation by user. Each request will send the id's of the found documentation to a endpoint you set here. Any ID's not returned back from the corporate filter will be blocked.
+- **Corporate Logging:** Connect NeuralSeek to a corporate audit logging endpoint. When connected and enabled, all requests and responses to the Seek api endpoint, as well as the Curate tab will be logged to your elasticSearch instance.
+
+## Advanced Setting Options
+
+- **Download Settings:** Click this to download a .dat copy of all settings in the configure tab to your local machine.
+- **Upload Settings:** Click this to upload and restore settings from a .dat copy backup of all settings in the configure tab from your local machine.
+- **Change Logs:** Click to view the change log history of all settings changed in this instance for auditing and debugging purposes.
