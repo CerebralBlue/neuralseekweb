@@ -1,10 +1,7 @@
 ---
-title: NeuralSeek Documentation
+title: NeuralSeek Overview
 permalink: /
-layout: title
 parent: root
 ---
 
-# Documentation
-
----
+{% include_relative overview/overview.md %}
