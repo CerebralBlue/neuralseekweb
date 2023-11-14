@@ -7,6 +7,20 @@ order: 7
 
 # Changelog
 
+## November 2023
+- #### New features:
+  - Visual Explore:
+    - Expanded NTL-based explore functionality with drag-and-drop simplicity for building Explore routines.
+    - Added the ability to create and save templates within the UI.
+    - Introduced variables for easy API calling by passing template name and variable values.
+
+- #### Updates:
+  - Enhanced context keeping and semantic score for improved abilities in Spanish.
+  - Rolled out a new Spanish micro-model to assist with Spanish NLP.
+  - Updated base weights and prompting to counter GPT's recent drifting.
+  - Semantic Scoring now has the ability to consider document title and URL, capturing unique words that may be missing in the document itself.
+  - Added the ability to pass a filter column for regression testing.
+
 ## October 2023
 - #### New features:
   - "Generate Data" options in Explore tab – Send to LLM, Table Understanding

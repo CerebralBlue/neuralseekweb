@@ -1,12 +1,7 @@
----
-title: NeuralSeek Overview
-permalink: /overview/
-parent: /
-order: 1
----
+{% comment %} This file must be kept in a different format, due to being included in the top-level index.md not shown in the knowledge repo. No header needed. {% endcomment %}
 
 # Overview
-![NeuralSeek overview](images/ns_overview.png)
+![NeuralSeek overview](overview/images/ns_overview.png)
 
 NeuralSeek is an AI-powered Answers-as-a-Service, designed to enhance information sharing and customer support within organizations’ virtual agents. NeuralSeek works by leveraging the capabilities of a sophisticated Large Language Model(LLM) and the users’ corporate KnowledgeBase, allowing virtual agents to provide concise and contextually relevant responses to user queries.
 

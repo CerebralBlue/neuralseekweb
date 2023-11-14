@@ -1,5 +1,5 @@
 ---
-title: Automatic Data Cleansing And Perparation
+title: Automatic Data Cleansing And Preparation
 permalink: /main_features/automatic_data_cleansing_and_preparation/
 parent: main_features
 order: 1
