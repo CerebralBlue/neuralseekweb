@@ -75,6 +75,27 @@ list the items for the latest month.
 Simply using the `{{ explore|template: "neuralseek_updates" }}` will produce the sample result.
 {% endraw %}
 
+**Providing the parameters**
+
+In case you have defined a parameter in your explore:
+
+{% raw %}
+```
+Based on the changelogs found here:
+{{ web|url:"<< name:'url' >>" }}
+list the items for the latest month.
+{{ LLM }}
+```
+{% endraw %}
+
+You can simply enter the name and value of the parameter followed by the template to specify values:
+
+{% raw %}
+`{{ explore|template: "neuralseek_updates"|url: "https://documentation.neuralseek.com/changelog/" }}` 
+{% endraw %}
+
+Notice that in this way your invocation to explore will be much more flexible, as you can dynamically provide the parameters when calling other explore.
+
 #### Website Text
 
 {% raw %}
