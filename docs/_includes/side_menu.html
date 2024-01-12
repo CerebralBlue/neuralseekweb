@@ -1,81 +1,19 @@
-    {% assign pages = site.pages | where: "parent", "root" %}
-    {% comment %}
-    <p>root pages found: {{ pages.size }}</p>
-    {% endcomment %}
-    {% assign QUEUE = "" | split: "," %}
-    {% assign QUEUE = QUEUE | push: pages %}
-    <ul class="nav flex-column" style="padding-inline-start: 0px;padding-left:1.2em">
-    {% for counter in ( 0.. site.pages.size ) %}
-      {% if QUEUE.size == 0 %}
-        {% break %}
-      {% endif %}
+{% comment %}
+  side_menu.html:
 
-      {% assign current = QUEUE | last %}
-      {% if current.size == 0 %}
-        {% break %}
-      {% endif %}
+  This template initializes the side menu by:
+  1. Fetching all pages that have a "parent" attribute set to "root".
+  2. Sorting these pages based on their "order" attribute.
+  3. Passing the sorted list of root pages to the `render_pages.html` include file, 
+     which is responsible for rendering each page and its sub-pages (if any) recursively.
+{% endcomment %} 
 
-      {% assign pagename = current[0].url %}
+{% comment %} 
+Get all pages with "parent" attribute set to "root" and sort them by "order" 
+{% endcomment %} 
+{% assign root_pages = site.pages | where: "parent", "root" | sort: "order" %}
 
-      {% if pagename != "/" %}
-        {% assign pagename = current[0].url | split: "/" | last | split: "." | first %}
-      {% endif %}
-
-        <li class="nav-item" style="line-height:1.5em;">
-          <a href="{{ site.url }}{{ site.baseurl }}{{current[0].url}}"><span {% if current[0].url == page.url %} class="current_page" {% endif %}>{{ current[0].title }}</span></a>
-        </li>
-
-      {% assign child = site.pages | where: "parent", pagename | sort: "order" %}
-      {% if current.size > 0 %}
-        {% assign current = current | slice: 1, current.size %}
-      {% endif %}
-      
-      {% comment %}
-      <p>page: {{ pagename }} children: {{ child.size }} QUEUE size: {{ QUEUE.size }}</p>
-      {% endcomment %}
-
-      {% comment %}
-      *******************************************
-      * the normal slice as such:
-      *
-      * {% assign QUEUE = QUEUE | slice: 0, -1 %}
-      * 
-      * just won't work due to some unknown reason
-      * (could be a bug). just decided to do it a 
-      * hard way
-      ********************************************
-      {% endcomment %}
-      {% assign tmp_Q = "" | split: "," %}
-      {% for item in QUEUE %}
-        {% unless forloop.last %}
-          {% assign tmp_Q = tmp_Q | push: item %}
-        {% endunless %}
-      {% endfor %}
-
-      {% assign QUEUE = tmp_Q %}
-      {% assign QUEUE = QUEUE | push: current %}
-
-      {% if child.size > 0 %}
-        {% assign QUEUE = QUEUE | push: child %}
-        <ul class="nav flex-column" style="padding-inline-start:0px;padding-left:1.2em;padding-top:2px;">
-      {% else %}
-        {% if current.size == 0 and child.size == 0 %}
-          
-          {% comment %}
-          ********************************************
-          * pop the last element out of QUEUE        *
-          ********************************************
-          {% endcomment %}
-          {% assign tmp_Q = "" | split: "," %}
-          {% for item in QUEUE %}
-            {% unless forloop.last %}
-              {% assign tmp_Q = tmp_Q | push: item %}
-            {% endunless %}
-          {% endfor %}
-          {% assign QUEUE = tmp_Q %}
-          </ul>
-
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    </ul>
+{% comment %} 
+Include the render_pages.html template to render the pages, passing the sorted root pages and the current page URL 
+{% endcomment %} 
+{% include render_pages.html pages=root_pages current_url=page.url collapsible=false %}

@@ -1,0 +1,25 @@
+<script>
+  $(document).ready(function() {
+      $('.collapseBtn').click(function(){
+        $(this).toggleClass('rotate-caret');
+      });
+
+      // Locate the <li> element containing the 'current_page' class
+      var currentPageItem = $('.current_page').closest('li');
+  
+      // Expand all parent <li> elements
+      currentPageItem.parents('li').each(function() {
+          var collapseButton = $(this).children('.collapseBtn');
+          if (collapseButton.attr('aria-expanded') === 'false') {
+              collapseButton.click(); // Expand only if it is not already expanded
+          }
+      });
+  
+      // Additionally, click the collapse button of the current_page's <li> if necessary
+      var currentPageCollapseButton = currentPageItem.children('.collapseBtn');
+      if (currentPageCollapseButton.attr('aria-expanded') === 'false') {
+          currentPageCollapseButton.click(); // Expand the current_page's <li>
+      }
+  });
+  </script>
+  

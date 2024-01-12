@@ -133,11 +133,6 @@ main img {
     text-decoration: none !important;
 }
 
-.current_page {
-    color: var(--selected);
-    font-weight: bolder;
-}
-
 .content pre {
     color: var(--pre);
 }
@@ -155,4 +150,47 @@ code {
 
 .header-bg {
   background-color: var(--color-canvas-sidebar);
+}
+
+.current_page {
+    color: var(--selected);
+    font-weight: bolder;
+}
+
+.collapsible {
+  position: relative;
+}
+
+.collapseBtn {
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  margin-right: 0px;
+  margin-top: -2px; 
+  display: inline-block;
+  transform: rotate(-90deg);
+  padding: 5px 6px; 
+  font-size: 14px;
+  line-height: 1.2;
+  background-color: var(--color-canvas-sidebar);
+  border: none;
+}
+
+.collapseBtn:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.rotate-caret {
+  display: inline-block;
+  transform: rotate(0deg);
+}
+
+.markdown-body .menu-header-line {
+  border: none;
+  border-top: 0.25px solid #cccccc;
+  height: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }

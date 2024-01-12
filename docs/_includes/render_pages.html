@@ -1,0 +1,80 @@
+{% comment %} 
+  render_pages.html:
+
+  This template recursively renders a list of pages and their sub-pages. 
+  It is designed to be used with the `side_menu.html` template, but can be used elsewhere if needed.
+
+  The template expects two variables:
+  1. pages: A list of pages to render.
+  2. current_url: The URL of the current page_name. Used to highlight the currently active page_name in the menu.
+  3. collapsible: Whether this top-level ul element should be collapsible
+  3. collapseID: if collapsilbe, the data target ID of the collapsible element
+
+  The recursion happens when, for each page_name in the list, it checks for its sub-pages and then includes itself 
+  (render_pages.html) to render those sub-pages.
+{% endcomment %}
+
+{% comment %} Trying to determine if we are the first call to recurse {% endcomment %}
+{% if include.pages[0].url == "/" %}
+  {% assign is_toplevel = true %}
+{% else %}
+  {% assign is_toplevel = false %}
+{% endif %}
+
+<ul class="nav flex-column" style="padding-inline-start: 0px;padding-left:1.2em" >
+{% for page_name in include.pages %}
+  {% if page_name.visible != false %}
+
+  {% comment %} Determine the name of the page_name for fetching its sub-pages {% endcomment %}
+  {% if page_name.url == "/" %}
+    {% assign pagename = page_name.url %}
+  {% else %}
+    {% assign pagename = page_name.url | split: "/" | last | split: "." | first %}
+  {% endif %}
+
+  {% comment %} Fetch sub-pages of the current page_name based on the determined name {% endcomment %}
+  {% assign sub_modules = site.pages | where: "parent", pagename | sort: "order" %}
+
+  {% comment %} If there is sub modules and we've decided that collapsing is allowed, add "collapsible" {% endcomment %}
+  {% if sub_modules.size > 0 and is_toplevel == false %}
+    {% assign navitemclass = "nav-item collapsible" %}
+  {% else %}
+    {% assign navitemclass = "nav-item" %}
+  {% endif %}
+
+  <li class="{{navitemclass}}" style="line-height:1.5em;">
+    {% comment %} Generate the link for the page_name {% endcomment %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ page_name.url }}">
+      {% comment %} Highlight the link if it's the currently active page_name {% endcomment %}
+      <span {% if page_name.url == include.current_url %} class="current_page" {% endif %}>{{ page_name.title }}</span>
+    </a>
+
+    {% comment %} If there are sub-pages, recursively render them {% endcomment %}
+    {% if sub_modules.size > 0 %}
+      {% comment %} If this is the most top-level item, we don't want to collapse this menu item {% endcomment %}
+      {% if is_toplevel == true %}
+        {% assign collapse = false %}
+        {% assign collapseID = '' %}
+      {% else %}
+        {% assign collapse = true %}
+        {% assign collapseID = page_name.permalink | replace: '/', '_' %}
+        <button class="btn btn-primary collapseBtn" type="button" data-toggle="collapse" data-target="#{{collapseID}}" aria-expanded="false" aria-controls="{{collapseID}}">
+          ▼
+        </button>
+      {% endif %}
+
+      {% if collapse == true %}
+      <div class="collapse" id="{{collapseID}}">
+        <hr class="menu-header-line">
+      {% else %}
+      <div>
+      {% endif %}
+
+        {% include render_pages.html pages=sub_modules current_url=include.current_url collapsible=collapse collapseID=collapseID %}
+      </div>
+    {% endif %}
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
