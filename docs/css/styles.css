@@ -133,11 +133,6 @@ main img {
     text-decoration: none !important;
 }
 
-.current_page {
-    color: var(--selected);
-    font-weight: bolder;
-}
-
 .content pre {
     color: var(--pre);
 }
@@ -155,4 +150,60 @@ code {
 
 .header-bg {
   background-color: var(--color-canvas-sidebar);
+}
+
+.current_page {
+    color: var(--selected);
+    font-weight: bolder;
+}
+
+.current_page:hover {
+    color: var(--selected) !important;
+    font-weight: bolder;
+}
+
+.collapsible {
+  position: relative;
+}
+
+.collapseBtn:hover {
+  color: var(--color-accent-hover-fg);
+  text-decoration: none;
+}
+
+.collapseBtn {
+  position: absolute;
+  top: 0; 
+  right: 0; 
+  margin-right: 0px;
+  margin-top: -8px; 
+  display: inline-block;
+  padding: 5px 6px; 
+  font-size: 26px;
+  line-height: 1.2;
+  background-color: var(--color-canvas-sidebar);
+  border: none;
+}
+
+.collapseBtn:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.collapseBtn:active:focus, .collapseBtn:active, .collapseBtn:hover, .collapseBtn:focus {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  color: 
+}
+
+.rotate-caret {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.no-transition {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
 }
