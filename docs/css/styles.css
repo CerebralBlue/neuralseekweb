@@ -176,11 +176,10 @@ code {
   top: 0; 
   right: 0; 
   margin-right: 0px;
-  margin-top: 0px; 
+  margin-top: -8px; 
   display: inline-block;
-  transform: rotate(-90deg);
   padding: 5px 6px; 
-  font-size: 14px;
+  font-size: 26px;
   line-height: 1.2;
   background-color: var(--color-canvas-sidebar);
   border: none;
@@ -200,5 +199,11 @@ code {
 
 .rotate-caret {
   display: inline-block;
-  transform: rotate(0deg);
+  transform: rotate(90deg);
+}
+
+.no-transition {
+  -webkit-transition: none;
+  transition: none;
+  display: none;
 }
