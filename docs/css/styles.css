@@ -157,8 +157,18 @@ code {
     font-weight: bolder;
 }
 
+.current_page:hover {
+    color: var(--selected) !important;
+    font-weight: bolder;
+}
+
 .collapsible {
   position: relative;
+}
+
+.collapseBtn:hover {
+  color: var(--color-accent-hover-fg);
+  text-decoration: none;
 }
 
 .collapseBtn {
@@ -166,7 +176,7 @@ code {
   top: 0; 
   right: 0; 
   margin-right: 0px;
-  margin-top: -2px; 
+  margin-top: 0px; 
   display: inline-block;
   transform: rotate(-90deg);
   padding: 5px 6px; 
@@ -181,16 +191,14 @@ code {
   box-shadow: none;
 }
 
+.collapseBtn:active:focus, .collapseBtn:active, .collapseBtn:hover, .collapseBtn:focus {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+  color: 
+}
+
 .rotate-caret {
   display: inline-block;
   transform: rotate(0deg);
-}
-
-.markdown-body .menu-header-line {
-  border: none;
-  border-top: 0.25px solid #cccccc;
-  height: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
 }

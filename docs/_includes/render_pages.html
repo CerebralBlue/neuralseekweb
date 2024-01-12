@@ -44,7 +44,7 @@
 
   <li class="{{navitemclass}}" style="line-height:1.5em;">
     {% comment %} Generate the link for the page_name {% endcomment %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ page_name.url }}">
+    <a {% if page_name.url != include.current_url %} href="{{ site.url }}{{ site.baseurl }}{{ page_name.url }}" {% endif %}>
       {% comment %} Highlight the link if it's the currently active page_name {% endcomment %}
       <span {% if page_name.url == include.current_url %} class="current_page" {% endif %}>{{ page_name.title }}</span>
     </a>
@@ -65,7 +65,6 @@
 
       {% if collapse == true %}
       <div class="collapse" id="{{collapseID}}">
-        <hr class="menu-header-line">
       {% else %}
       <div>
       {% endif %}
